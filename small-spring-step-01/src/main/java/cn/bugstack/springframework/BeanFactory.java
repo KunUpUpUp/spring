@@ -22,4 +22,7 @@ public class BeanFactory {
         System.out.println("没错，我故意的");
     }
 
+    public void conflict() {
+        System.out.println("我又起冲突");
+    }
 }
