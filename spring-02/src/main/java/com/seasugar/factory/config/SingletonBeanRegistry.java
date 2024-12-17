@@ -1,5 +1,5 @@
 package com.seasugar.factory.config;
 
-public interface BeanDefinition {
-    
+public interface SingletonBeanRegistry {
+    Object getSingleton(String name);
 }

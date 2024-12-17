@@ -1,4 +1,4 @@
-package com.seasugar.factory;
+package com.seasugar.factory.support;
 
 import com.seasugar.BeanException;
 

@@ -1,16 +1,15 @@
 @startuml
-'https://plantuml.com/object-diagram
-
-object London
-object Washington
-object Berlin
-object NewYork
-
-map CapitalCity {
- UK *-> London
- USA *--> Washington
- Germany *---> Berlin
+interface BeanFactory {
+    + getBean(String name) : Object
 }
 
-NewYork --> CapitalCity::USA
-@enduml
+interface SingletonBeanRegistry{
+    + getSingleton(String name) : Object
+}
+
+class DefaultSingletonBeanRegistry implements SingletonBeanRegistry {
+    + getSingleton((String name) : Object
+}
+
+
+@endum
