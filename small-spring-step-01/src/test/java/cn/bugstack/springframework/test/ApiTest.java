@@ -3,6 +3,7 @@ package cn.bugstack.springframework.test;
 import cn.bugstack.springframework.BeanDefinition;
 import cn.bugstack.springframework.BeanFactory;
 import cn.bugstack.springframework.test.bean.UserService;
+import cn.bugstack.springframework.test.bean.UserServiceImpl;
 import org.junit.Test;
 
 import java.lang.reflect.Field;
@@ -27,6 +28,19 @@ public class ApiTest {
         // 3.获取bean
         UserService userService = (UserService) beanFactory.getBean("userService");
         userService.queryUserInfo();
+    }
+
+    @Test
+    public void testClass() {
+        if (getClass() == ApiTest.class) {
+            System.out.println("相同的Class");
+        } else {
+            System.out.println("不同的Class");
+        }
+
+
+        UserServiceImpl userService = new UserServiceImpl();
+        System.out.println(userService.getClass());
     }
 
 }
