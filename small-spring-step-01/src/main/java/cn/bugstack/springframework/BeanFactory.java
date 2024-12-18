@@ -18,13 +18,4 @@ public class BeanFactory {
         beanDefinitionMap.put(name, beanDefinition);
     }
 
-    public void getWay() {
-        System.out.println("没错，我故意的");
-    }
-
-    public void conflict() {
-        System.out.println("我起冲突111");
-        System.out.println("我又起冲突11");
-    }
-
 }
