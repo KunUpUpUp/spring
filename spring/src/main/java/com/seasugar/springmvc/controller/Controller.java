@@ -1,0 +1,13 @@
+package com.seasugar.springmvc.controller;
+
+import com.seasugar.springmvc.myannotation.Token;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class Controller {
+    @GetMapping("/test")
+    public String test1(@Token String token) {
+        return token;
+    }
+}
