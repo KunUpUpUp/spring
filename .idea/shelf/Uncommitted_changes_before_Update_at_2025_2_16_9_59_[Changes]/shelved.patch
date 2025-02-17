@@ -1,0 +1,3 @@
+diff --git a/spring-ioc/src/test/java/ApplicationContextTest.java b/spring-ioc/src/main/test/java/ApplicationContextTest.java
+rename from spring-ioc/src/test/java/ApplicationContextTest.java
+rename to spring-ioc/src/main/test/java/ApplicationContextTest.java
