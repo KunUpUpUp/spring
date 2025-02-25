@@ -10,4 +10,8 @@ public class ApplicationContextTest {
         UserService userService = (UserService) context.getBean(UserService.class);
         userService.useMapper();
     }
+
+    @Test
+    public void testAnnotation() {
+    }
 }
